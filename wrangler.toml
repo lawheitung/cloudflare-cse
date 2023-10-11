@@ -49,3 +49,14 @@ compatibility_date = "2023-10-02"
 # [[migrations]]
 # tag = "v1"
 # new_classes = ["MyDurableObject"]
+
+name= "cse-cloudflare"
+main = "index.js"
+compatibility_date = "2023-03-08"
+
+r2_buckets = [
+    {
+        binding = "R2_BUCKET",
+        bucket_name = "country-flag"
+    }
+]
